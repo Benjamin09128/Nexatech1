@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Ogbonna | Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style> 
+    .header-card{
+      background: linear-gradient(to right,rgb(250, 42, 142),rgb(243, 26, 26));
+      color: white;
+      border-radius: 1rem 1rem 0 0;
+      padding: 1.5rem; 
+    }
+    .fs-6{
+      padding-left: 260px;
+    }
+    .custom-red {
+    color:rgba(11, 57, 105, 0.94);
+    }
+    .custom-red2 {
+    color: #28a745;
+    }
+    .custom-navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      }
+      .custom-navbar .nav-link {
+      position: relative;
+      padding-bottom: 5px;
+      font-weight: 600;
+      }
+      .custom-navbar .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      height: 3px;
+      width: 0;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+      }
+
+      .custom-navbar .nav-link:hover::after {
+      width: 50px; /* or any fixed value like 50px */
+      }
+      .custom-navbar .nav-link.creator-intro {
+      color:rgb(63, 5, 88);
+      }
+      .custom-navbar .nav-link.about { 
+      color:rgba(11, 57, 105, 0.94);
+      }
+      .custom-navbar .nav-link.projects {
+      color: #28a745;
+      }
+      .custom-navbar .nav-link.contact {
+      color: #dc3545;
+      }
+      .custom-navbar .nav-link.skills {
+      color:rgb(243, 209, 19);
+      }
+
+    @media (max-width: 767.98px) {
+    .fs-6 {
+    padding-left: 0; /* remove padding on mobile */
+    }
+    }
+
+  </style>
+</head>
+<body class="bg-light">
+
+<!-- navbar section -->
+ <nav class="nav justify-content-center mb-4 py-3 custom-navbar">
+    <a class="nav-link creator-intro" href="#creator-intro">HOME</a>
+    <a class="nav-link about" href="#about">ABOUT</a>
+    <a class="nav-link projects" href="#projects">PROJECTS</a>
+    <a class="nav-link contact" href="#contact">CONTACT</a>
+    <a class="nav-link skills" href="#skills">SKILLS</a>
+  </nav>
+
+
+
+<!-- Home section -->
+<div id="creator-intro" class="py-5"> 
+  <div class="container">
+    <div class="card mx-auto" style="max-width: 1000px;">
+      <div class="header-card d-flex align-items-center" style="height: 230px; position: relative; overflow: visible">
+        <!-- Desktop image: visible md and up, fixed size -->
+          <img src="images/black.png" alt="Creator" class="d-none d-md-block img-fluid"
+          style="width: 350px; height: 270px; object-fit: cover; position: relative; top: 40px; left: 0; border-radius: 1rem;">
+        <h1 class="display-5 fw-bold mb-0 ps-3 fs-2">
+          Hi, I'm Benjamin. I build websites, create bold designs, and grow brands on social media.
+        </h1>
+      </div>
+      <div class="card-body">
+        <!-- Mobile image: visible only on small screens, full width -->
+        <img src="images/black.png" alt="Creator"
+          class="d-block d-md-none img-fluid mb-3" style="object-fit: cover; width: 100%; height: auto; border-radius: 1rem;">
+      
+        <p class="mb-0 fs-6">
+          I'm a trained web designer, graphics designer, and social media manager, having learned professional web development skills from <strong>Codefest International. </strong> I know how fun and rewarding building a website can be — but I also understand how frustrating it gets when things don't go as planned.
+       </p>
+        <p class="mb-0 fs-6">
+          Whether you're a small business looking to improve your online presence, or you're starting a new brand and want it to stand out with great design and strategy — I’m here to make that journey easier. From sleek websites to compelling visuals and effective social media management, <strong>I help bring your digital goals to life.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- About section -->
+<div id="about" class="container py-5" style="background: linear-gradient(to right,rgba(241, 245, 250, 0.94),rgb(243, 231, 235)); font-family: 'Segoe UI', sans-serif; border-radius: 10px;">
+  <div class="text-start">
+    <h1 class="custom-red fw-bold">about</h1>
+  </div>
+  <div class="mt-4">
+    <p style="font-size: 1.25rem; max-width: 800px; font-family: Arial, sans-serif;">
+      I am a web developer, graphic designer, and social media manager. I specialize in creating clean, responsive websites using HTML, CSS, and JavaScript.
+      <strong> Alongside this, I design compelling visuals that enhance brand identity </strong>
+      and manage social media content to drive meaningful engagement. By combining creativity with technical expertise, I deliver impactful and effective digital experiences.
+    </p>
+  </div>
+</div>
+
+
+<!-- Projects section: Card style -->
+<div id="projects" class="container py-5">
+  <div class="text-start mb-4">
+    <h1 class="custom-red2 fw-bold">projects</h1>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Web Development</h5>
+          <p class="card-text">Projects include an Expense Tracker, Wisetek website an Interior & Exterior Décor site using HTML, CSS, JS, Bootstrap and PHP.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Social Media Management</h5>
+          <p class="card-text">I manage Wisetek services (Facebook & Instagram) and Nexatech (Facebook & Instagram), focusing on strategy, visuals, and engagement.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Graphic Design</h5>
+          <p class="card-text">Skilled in crafting flyers, logos, branding materials, and more—designed for both digital and print use.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact section -->
+<div id="contact" class="container py-5" style="background: linear-gradient(to right, #f8f6f6, rgb(243, 231, 235)); font-family: 'Segoe UI', sans-serif; border-radius: 10px;">
+  <div class="text-start">
+    <h1 class="text-danger fw-bold">contact</h1>
+  </div>
+  <div class="mt-4">
+    <p style="font-size: 1.25rem; max-width: 800px; font-family: Arial, sans-serif;">
+      You can reach out to me for web development, graphic design, or social media management services through the following channels:
+    </p>
+    <ul style="font-size: 1.1rem; list-style: none; padding-left: 0;">
+    <li>
+    <strong>Email:</strong>
+    <a href="mailto:benjaminogbonna651@gmail.com" class="text-decoration-none text-dark">
+    <i class="bi bi-envelope-fill me-1"></i>Send mail
+    </a>
+    </li>
+    <li>
+    <strong>Phone:</strong>
+    <a href="tel:+2349163853814" class="text-decoration-none text-dark">
+    <i class="bi bi-telephone-fill me-1"></i>Call
+    </a>
+    </li>
+    <li><strong>Facebook:</strong> <a href="https://wwwfcaebook.com/share/1DmMNoUAxf/" target="_blank" style="text-decoration: none;"><i class="bi bi-facebook me-1"></i></a></li>
+    <li><strong>Instagram:</strong> <a href="https://wwwinstagram.com/nexatech11?igsh=MXdsY204dm1hbTB1dg==" style="text-decoration: none;" target="_blank"><i class="bi bi-instagram me-1"></i></a></li>
+    </ul>
+    <p style="font-size: 1.1rem;">Feel free to send a message or inquiry anytime. I'm always open to collaboration and new projects.</p>
+  </div>
+</div>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-warning fw-bold mb-4">My Skills</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Experienced in creating responsive websites using HTML, CSS, JavaScript, Bootstrap, PHP and MySQL.</p>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar bg-primary" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design</h5>
+            <p class="card-text">Proficient in Canva, Photoshop, PixelLab, etc and creating engaging visual content for brands.</p>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar bg-success" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Social Media Management</h5>
+            <p class="card-text">Skilled in content planning, post design, engagement strategies, and analytics.</p>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar bg-danger" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Back to Top Button -->
+<button onclick="scrollToTop()" class="btn btn-dark position-fixed bottom-0 end-0 m-4 rounded-circle shadow" style="z-index: 999;">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+
+<!-- footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-3 fw-semibold">Find Me Elsewhere on the Web</p>
+    <ul class="list-inline mb-3">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/profile.php?id=61575525789089" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-facebook"></i> Facebook
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://instagram.com/nexatech11" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-instagram"></i> Instagram
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://github.com/Benjamin09128" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://x.com/Nexatech211" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-twitter-x"></i> Twitter
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://discord.com/nexatech._68791" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-discord"></i> Discord
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="mailto:benjaminogbonna651@gmail.com" class="text-white text-decoration-none">
+          <i class="bi bi-envelope-fill"></i> Email
+        </a>
+      </li>
+    </ul>
+    <small class="d-block"> 2025 Embrace the Cascade.</small>
+  </div>
+</footer>
+
+
+</body>
+</html>
